@@ -1,0 +1,350 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayarlar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/settings.js" defer></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <hr>
+        <div class="row">
+            <div class="col-sm-12">
+                <a href="index.html" class="btn btn-warning">Main Page</a>
+                <button class="btn btn-danger" onclick="onClearLocalStorage()">Reset data</button>
+                <button class="btn btn-success" data-toggle="modal" data-target="#Suat"
+                    id="C">Translate</button>
+                <div class="modal" style="color: black;" id="Suat">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="D">Tərcümə Etmək Üçün Dil Seçin</h4>
+                                <button class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <div class="modal-body">
+                                <button class="btn btn-outline-primary" id="F"><a href="settings.html" style="text-decoration: none;">Azərbaycan Dili</a></button>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <center>
+                <span class="display-4 text-danger">Diqqət!</span>
+                </center>
+                <hr>
+                <p class="h3 text-dark" style="text-align: justify;">When the (Reset Data) button is pressed,
+                    the data used within the program will be cleaned and
+                    will be reset. When opening the program for the first time, many
+                    data is already loaded. Other information about the user himself
+                    can enter the program. That the program is not part of the backend
+                    according to which the saved data is only used by the program
+                    will remain in the web browser.
+                </p>
+                
+            </div>   
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <hr>
+                <center>
+                <span class="display-4 text-danger">Additional Information</span><br><br>
+                </center>
+                <ul class="nav nav-tabs" role="tab-list">
+                    <li class="nav-item">
+                        <a href="#settingsPage" data-toggle="tab" class="nav-link active">Settings section</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#mainPage" data-toggle="tab" class="nav-link ">Main Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#shopping" data-toggle="tab" class="nav-link ">Trading section</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#loginPage" data-toggle="tab" class="nav-link ">Introduction section</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#myComputersPage" data-toggle="tab" class="nav-link ">My computers section</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#ordersPage" data-toggle="tab" class="nav-link ">My Orders section</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#stepsPage" data-toggle="tab" class="nav-link ">Steps section</a>
+                    </li>
+                </ul>
+                <div class="tab-content" style="min-height: 500px;">
+                    <div id="settingsPage" class="container tab-pane active">
+                        <br>
+                        <p class="h6 text-dark">
+                            In this section, it is possible to reset the template data used in the program.
+                            The following programs were used to build this program:
+                        </p>
+                        <ul class="text-dark">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>jQuery</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <p class="h6 text-dark">
+                            When the program is first opened <strong class="text-danger">The one written inside the index.js</strong> file
+                            how many objects are created and written to the browser's localStorage memory. Your project
+                            this information is used within. The program only works locally. None
+                            does not connect to the service. Only the front-end part of the project is built.
+                        </p>
+                    </div>
+                    <div id="mainPage" class="container tab-pane fade">
+                        <br>
+                        <p class="h6 text-dark">
+                            On this page, the user can access other pages.
+                            If you go to the computer shopping page, then it is available
+                           will see the categories of registered computers.
+                           Also listed on later registered computers
+                            will appear. User can search computers. <br><br>
+
+                            <strong>You can access your account by clicking the Login</strong> button.
+                            If you don't have an existing account, you can open a new account.
+                            This data is only saved in the current browser.<br><br>
+
+                            User logged in to the account to use the program as a seller
+                            begins. It can also be used as a receiver. That is, from the list
+                            can select a computer, put it in the cart and buy the computers. On account as a seller
+                            The logged in user can register new computers to the system and
+                            he can see the orders of the computers he sells. <br><br>
+                        </p>
+                    </div>
+                    <div id="shopping" class="container tab-pane fade">
+                        <br>
+                        <p class="h6 text-dark">
+                            In this section, the user uses the program as a receiver. Logged in as a seller
+                            whether or not. Buyer chooses the desired category from the list of categories of computers
+                            can log in and drop the desired computer into the cart. Also, buyers of computers
+                            Click the left mouse button on the image to get detailed information about the computer
+                            can After placing the computers he wants to buy in the basket, he confirms his order
+                            and in the pop-up window, the buyer enters their information and finalizes their order.
+                            At this time, the computers he bought in the basket, the orders of the sellers of those computers
+                            section appears.
+                        </p>
+                    </div>
+                    <div id="loginPage" class="container tab-pane fade">
+                        <br>
+                        <p class="h6 text-dark">
+                            In this section, the user can access his account.
+                            Also, if the account does not exist, for himself
+                            can open a new account. <br><br>
+
+                            5 users when we open the program for the first time
+                            is already registered in the system. These users
+                            are as follows:
+
+                            <table class="table table-bordered text-dark">
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Username:</th>
+                                        <th>Password</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Admin001</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Admin002</td>
+                                        <td>p2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Admin003</td>
+                                        <td>p3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Admin004</td>
+                                        <td>p4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Admin005</td>
+                                        <td>p5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Admin006</td>
+                                        <td>admin</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </p>
+                    </div>
+
+                    <div id="myComputersPage" class="container tab-pane fade">
+                        <br>
+                        <p class="h6 text-dark">
+                            In this section, the seller can see the list of his computers.
+                            Also, you can register a new computer and from the list
+                            can select, delete and edit the desired computer.
+                        </p>
+                    </div>
+
+                    <div id="ordersPage" class="container tab-pane fade">
+                        <br>
+                        <p class="h6 text-dark">
+                            In this section, the user can see their orders. That is, the seller can see the information of the buyers who bought his computers and the list of which computers they want to buy.
+                        </p>
+                    </div>
+
+                    <div id="stepsPage" class="container tab-pane fade">
+                        <br>
+                            <table class="table table-dark table-striped border-light">
+                                <thead>
+                                    <tr>
+                                        <th><strong>S/N</strong></th>
+                                        <th>Step</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Setting up the main login page</td>
+                                        <td class="step-mark">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Creating a new user account</td>
+                                        <td class="step-mark">20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>When creating a new user account, to notify if the username exists</td>
+                                        <td class="step-mark">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Logging in to the user's account</td>
+                                        <td class="step-mark">15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Logging out of the user's account</td>
+                                        <td class="step-mark">15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Registration of a new computer by the user</td>
+                                        <td class="step-mark">30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>User can see and search the list of their computers</td>
+                                        <td class="step-mark">20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>The user can see the list of his computers and the user can delete his computers</td>
+                                        <td class="step-mark">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>The user can see a list of their computers and the user's own computers can edit the user's own computers</td>
+                                        <td class="step-mark">20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>User's own computers view list and User's own computersUser's own computersDevelopment of computer categories section of buyer page</td>
+                                        <td class="step-mark">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>User's own computers list and User's own computersUser's own computers computer categories section of the buyer's page Creating the computer list section of the buyer's page</td>
+                                        <td class="step-mark">30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Computer search on the buyer's page</td>
+                                        <td class="step-mark">25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>View detailed computer information on the buyer's page</td>
+                                        <td class="step-mark">15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>Cart window Add computers to cart and cart window on buyer page</td>
+                                        <td class="step-mark">30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>Changing computer quantities in the shopping cart window</td>
+                                        <td class="step-mark">15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>Deleting a computer in the cart window</td>
+                                        <td class="step-mark">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>Cleaning the basket</td>
+                                        <td class="step-mark">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>IsifBasket confirmation and preparation of the registration window and registration of the order</td>
+                                        <td class="step-mark">35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td>User's view of their orders</td>
+                                        <td class="step-mark">25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>Searching for user orders</td>
+                                        <td class="step-mark">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>21</td>
+                                        <td>Preparation of the admin page</td>
+                                        <td class="step-mark">30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22</td>
+                                        <td>Partial loading of computers on the buyer's page</td>
+                                        <td class="step-mark">40</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Buyer Total Value</td>
+                                        <td id="totalValue"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html> -->
